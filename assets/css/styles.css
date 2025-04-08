@@ -689,10 +689,9 @@ body.dark-theme {
 }
 
 .timeline-description {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: var(--normal-font-size);
 }
 
 /* Tecnologías */
