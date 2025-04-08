@@ -84,7 +84,7 @@ function loadProjects() {
                         <article class="projects__card">
                             <div class="projects__header">
                                 <h3 class="projects__title">${project.title}</h3>
-                                <span class="projects__subtitle">${project.type}</span>
+                                <span class="projects__subtitle">${project.description}</span>
                             </div>
                             <img src="assets/img/${project.image}" alt="${project.title}" class="projects__img">
                             <div class="projects__modal">

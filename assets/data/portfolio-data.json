@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "CineRadar",
-      "type": "APP",
+      "description": "APP",
       "image": "cineradar.jpeg",
       "link": "#",
       "technologies": [
@@ -13,7 +13,7 @@
     },
     {
       "title": "FinMusic",
-      "type": "Reproductor multiplataforma de música de YouTube Music.",
+      "description": "Reproductor multiplataforma de música de YouTube Music.",
       "image": "finmusic.jpeg",
       "link": "#",
       "technologies": [
