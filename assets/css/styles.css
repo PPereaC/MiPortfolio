@@ -219,14 +219,14 @@ body.dark-theme {
 }
 
 .profile__social-link {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: var(--title-color);
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   transform: translateY(0) scale(1);
   opacity: 0;
@@ -308,6 +308,8 @@ body.dark-theme {
   border-radius: .5rem;
   transition: .3s;
   box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .button i {
@@ -319,8 +321,9 @@ body.dark-theme {
 }
 
 .button__small {
-  padding: .75rem;
+  padding: 5rem;
   box-shadow: none;
+  font-size: 5rem;
 }
 
 .button__gray {
