@@ -114,6 +114,7 @@ function loadData() {
         .then(data => {
             loadProjects(data);
             loadExperience(data);
+            loadSkills(data);
         })
         .catch(error => console.error('Error loading data:', error));
 }
@@ -182,4 +183,62 @@ function initProjectAnimations() {
         interval: 100,
         delay: 300
     });
+}
+
+/*=============== SKILLS LOADING ===============*/
+function loadSkills(data) {
+    const skillsContainer = document.getElementById('skills-container');
+    const filterItems = document.querySelectorAll('.skills__filter-item');
+    
+    if (skillsContainer && data.skills && Array.isArray(data.skills)) {
+        // Función para renderizar las habilidades según el filtro
+        const renderSkills = (filter = 'all') => {
+            skillsContainer.innerHTML = '';
+            
+            // Filtrar las habilidades según la categoría seleccionada
+            const filteredSkills = filter === 'all' 
+                ? data.skills 
+                : data.skills.filter(skill => skill.category === filter);
+            
+            // Crear y añadir cada habilidad al contenedor
+            filteredSkills.forEach((skill, index) => {
+                const skillItem = document.createElement('div');
+                skillItem.className = 'skill-item';
+                skillItem.style.animationDelay = `${index * 0.1}s`;
+                
+                skillItem.innerHTML = `
+                    <img src="${skill.icon}" alt="${skill.name}">
+                    <div class="skill-name">${skill.name}</div>
+                `;
+                
+                skillsContainer.appendChild(skillItem);
+            });
+            
+            // Inicializar animaciones para las habilidades
+            ScrollReveal().reveal('.skill-item', {
+                origin: 'bottom',
+                distance: '20px',
+                duration: 800,
+                interval: 50,
+                delay: 200
+            });
+        };
+        
+        // Renderizar todas las habilidades al inicio
+        renderSkills();
+        
+        // Añadir eventos de clic a los filtros
+        filterItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remover la clase active de todos los filtros
+                filterItems.forEach(i => i.classList.remove('active'));
+                // Añadir la clase active al filtro seleccionado
+                item.classList.add('active');
+                // Obtener el valor del filtro
+                const filterValue = item.getAttribute('data-filter');
+                // Renderizar las habilidades según el filtro
+                renderSkills(filterValue);
+            });
+        });
+    }
 }

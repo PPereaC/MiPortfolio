@@ -70,8 +70,30 @@
     }
   ],
   "skills": [
-    {"name": "JavaScript", "icon": "ri-javascript-line", "category": "frontend"},
-    {"name": "React", "icon": "ri-reactjs-line", "category": "frontend"}
+    {"name": "Dart", "icon": "https://svgl.app/library/dart.svg", "category": "languages"},
+    {"name": "PHP", "icon": "https://www.svgrepo.com/show/349474/php.svg", "category": "languages"},
+    {"name": "Java", "icon": "https://svgl.app/library/java.svg", "category": "languages"},
+    {"name": "C#", "icon": "https://svgl.app/library/csharp.svg", "category": "languages"},
+    {"name": "JavaScript", "icon": "https://svgl.app/library/javascript.svg", "category": "languages"},
+    
+    
+    {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg", "category": "frameworks"},
+    {"name": "Laravel", "icon": "https://svgl.app/library/laravel.svg", "category": "frameworks"},
+
+    {"name": "Git", "icon": "https://svgl.app/library/git.svg", "category": "tools"},
+    {"name": "Linux", "icon": "https://svgl.app/library/linux.svg", "category": "tools"},
+    {"name": "Microsoft Word", "icon": "https://www.svgrepo.com/show/374187/word.svg", "category": "tools"},
+    {"name": "VS Code", "icon": "https://svgl.app/library/vscode.svg", "category": "tools"},
+    {"name": "GitHub", "icon": "https://svgl.app/library/github_dark.svg", "category": "tools"},
+
+    {"name": "MySQL", "icon": "https://www.svgrepo.com/show/373848/mysql.svg", "category": "databases"},
+    {"name": "Firebase", "icon": "https://svgl.app/library/firebase.svg", "category": "databases"},
+    {"name": "Isar Database", "icon": "https://isar.dev/isar.svg", "category": "databases"},
+    {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg", "category": "databases"},
+
+    {"name": "HTML5", "icon": "https://svgl.app/library/html5.svg", "category": "others"},
+    {"name": "CSS3", "icon": "https://svgl.app/library/css.svg", "category": "others"}
+    
   ],
   "education": [
     {
