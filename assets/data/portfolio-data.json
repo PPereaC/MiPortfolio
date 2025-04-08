@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "title": "CineRadar",
+      "type": "APP",
+      "image": "cineradar.jpeg",
+      "link": "#",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "SQLite", "icon": "https://svgl.app/library/sqlite.svg", "size": "large"}
+      ]
+    },
+    {
+      "title": "FinMusic",
+      "type": "Reproductor multiplataforma de música de YouTube Music.",
+      "image": "finmusic.jpeg",
+      "link": "#",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "SQLite", "icon": "https://svgl.app/library/sqlite.svg"}
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Solutions",
+      "position": "Frontend Developer",
+      "period": "2020 - Presente",
+      "contract": "Full-time",
+      "description": "Desarrollo de interfaces con React y optimización de performance.",
+      "technologies": [
+        {"name": "React", "icon": "ri-reactjs-line"},
+        {"name": "TypeScript", "icon": "ri-code-line"}
+      ]
+    }
+  ],
+  "skills": [
+    {"name": "JavaScript", "icon": "ri-javascript-line", "category": "frontend"},
+    {"name": "React", "icon": "ri-reactjs-line", "category": "frontend"}
+  ],
+  "education": [
+    {
+      "title": "Computer Science Degree",
+      "institution": "University X",
+      "year": "2019",
+      "certificate": "#"
+    }
+  ]
+}
