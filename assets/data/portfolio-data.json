@@ -24,15 +24,48 @@
     }
   ],
   "experience": [
+    
     {
-      "company": "Tech Solutions",
-      "position": "Frontend Developer",
-      "period": "2020 - Presente",
-      "contract": "Full-time",
-      "description": "Desarrollo de interfaces con React y optimización de performance.",
+      "company": "Supermercado Las Palmeras S.L",
+      "position": "Desarrollador de Software",
+      "period": "oct. 2024 - nov. 2024 (2 meses)",
+      "contract": "Contrato por obra o servicio",
+      "description": "Desarrollé una aplicación de escritorio en Flutter para la gestión de productos, generando etiquetas con códigos de barras, nombre, cantidad, precio, y precio por KG/L para optimizar la organización y venta en el supermercado.",
       "technologies": [
-        {"name": "React", "icon": "ri-reactjs-line"},
-        {"name": "TypeScript", "icon": "ri-code-line"}
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "Microsoft Word", "icon": "https://www.svgrepo.com/show/374187/word.svg"}
+      ]
+    },
+    {
+      "company": "Vicente Navas S.L",
+      "position": "Desarrollador de Aplicaciones",
+      "period": "jul. 2024 - ago. 2024 (2 meses)",
+      "contract": "Contrato por obra o servicio",
+      "description": "Desarrollé una aplicación en Flutter para empleados, permitiendo gestionar y ver información de enfriadoras, con escaneo de QR para datos de máquinas físicas.",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "Firebase", "icon": "https://svgl.app/library/firebase.svg"}
+      ]
+    },
+    {
+      "company": "Deltanet Sistemas de Información",
+      "position": "Desarrollador de aplicaciones móviles y web",
+      "period": "abr. 2024 - jun. 2024 (3 meses)",
+      "contract": "Prácticas en Empresa",
+      "description": "Durante los tres meses de prácticas, he trabajado en el desarrollo de aplicaciones utilizando Flutter. Me he enfocado en crear soluciones adaptadas a las necesidades específicas de los clientes. Este trabajo me ha permitido profundizar en el diseño y desarrollo de aplicaciones multiplataforma. Además, participé en un proyecto web empleando PHP y Laravel, fortaleciendo mis habilidades en el desarrollo backend y la gestión de proyectos web. He implementado y trabajado con APIs RESTful, permitiéndome experimentar el ciclo completo de desarrollo desde el frontend hasta el backend.",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "PHP", "icon": "https://www.svgrepo.com/show/349474/php.svg"},
+        {"name": "Laravel", "icon": "https://svgl.app/library/laravel.svg"},
+        {"name": "Firebase", "icon": "https://svgl.app/library/firebase.svg"},
+        {"name": "SQL", "icon": "https://www.svgrepo.com/show/255832/sql.svg"},
+        {"name": "MySQL", "icon": "https://www.svgrepo.com/show/373848/mysql.svg"},
+        {"name": "HTML5", "icon": "https://svgl.app/library/html5.svg"},
+        {"name": "CSS", "icon": "https://svgl.app/library/css.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg"}
       ]
     }
   ],

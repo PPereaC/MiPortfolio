@@ -48,6 +48,48 @@ tabs.forEach(tab => {
     });
 });
 
+/*=============== EXPERIENCE ===============*/
+const loadExperience = (data) => {
+    const timelineContainer = document.getElementById('experience-timeline');
+    
+    if (data.experience && Array.isArray(data.experience)) {
+        data.experience.forEach((exp, index) => {
+            const timelineItem = document.createElement('div');
+            timelineItem.className = 'timeline-item';
+            timelineItem.style.animationDelay = `${index * 0.2}s`;
+            
+            timelineItem.innerHTML = `
+                <div class="timeline-header">
+                    <div class="timeline-position">${exp.position}</div>
+                    <div class="timeline-company">${exp.company}</div>
+                    <div class="timeline-period">${exp.period}</div>
+                </div>
+                <p class="timeline-description">${exp.description}</p>
+                <div class="timeline-tech">
+                    ${exp.technologies.map(tech => {
+                        const iconHtml = tech.icon.endsWith('.svg') ? 
+                            `<img src="${tech.icon}" alt="${tech.name}">` : 
+                            `<i class="${tech.icon}"></i>`;
+                        return `<span class="timeline-tech-item">
+                            ${iconHtml} ${tech.name}
+                        </span>`;
+                    }).join('')}
+                </div>
+            `;
+            
+            timelineContainer.appendChild(timelineItem);
+        });
+
+        // Añadir animaciones para cada elemento
+        ScrollReveal().reveal('.timeline-item', {
+            origin: 'bottom',
+            distance: '30px',
+            duration: 1000,
+            interval: 200
+        });
+    }
+};
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -66,9 +108,17 @@ sr.reveal(`.filters__content`, {delay: 900});
 sr.reveal(`.filters`, {delay: 1000});
 
 /*=============== PROJECTS DATA LOADING ===============*/
-document.addEventListener('DOMContentLoaded', () => {
-    loadProjects();
-});
+function loadData() {
+    fetch('assets/data/portfolio-data.json')
+        .then(response => response.json())
+        .then(data => {
+            loadProjects(data);
+            loadExperience(data);
+        })
+        .catch(error => console.error('Error loading data:', error));
+}
+
+document.addEventListener('DOMContentLoaded', loadData);
 
 function loadProjects() {
     fetch('assets/data/portfolio-data.json')
