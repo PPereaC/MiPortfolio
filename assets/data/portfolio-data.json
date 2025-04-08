@@ -2,24 +2,24 @@
   "projects": [
     {
       "title": "CineRadar",
-      "description": "APP",
+      "description": "Descubre películas y guarda tus favoritas en tu propia colección personalizada.",
       "image": "cineradar.jpeg",
-      "link": "#",
+      "link": "https://github.com/PPereaC/CineRadar",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
-        {"name": "SQLite", "icon": "https://svgl.app/library/sqlite.svg", "size": "large"}
+        {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg"}
       ]
     },
     {
       "title": "FinMusic",
       "description": "Reproductor multiplataforma de música de YouTube Music.",
       "image": "finmusic.jpeg",
-      "link": "#",
+      "link": "https://github.com/PPereaC/FinMusic",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
-        {"name": "SQLite", "icon": "https://svgl.app/library/sqlite.svg"}
+        {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg"}
       ]
     }
   ],

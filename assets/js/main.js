@@ -86,7 +86,9 @@ function loadProjects() {
                                 <h3 class="projects__title">${project.title}</h3>
                                 <span class="projects__subtitle">${project.description}</span>
                             </div>
-                            <img src="assets/img/${project.image}" alt="${project.title}" class="projects__img">
+                            <div class="projects__img-container">
+                                <img src="assets/img/${project.image}" alt="${project.title}" class="projects__img">
+                            </div>
                             <div class="projects__modal">
                                 <div>
                                     <div class="projects__footer">
