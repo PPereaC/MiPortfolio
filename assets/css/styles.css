@@ -209,7 +209,7 @@ body.dark-theme {
   font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Redes sociales */
@@ -275,8 +275,8 @@ body.dark-theme {
 }
 
 .profile__about-text {
-  font-size: var(--h2-font-size);
-  color: var(--text-color);
+  font-size: var(--h1-font-size);
+  color: #FFF;
   line-height: 1.8;
   text-align: center;
 }
@@ -908,6 +908,7 @@ body.dark-theme {
     margin: 0 auto;
     max-width: 85%;
   }
+
 }
 
 /* Dispositivos móviles medianos */
@@ -918,6 +919,20 @@ body.dark-theme {
     gap: 2rem;
     margin: 0 auto;
     max-width: 90%;
+  }
+  .profile__border {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1rem;
+  }
+  
+  .profile__perfil {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile__perfil img {
+    width: 140px;
   }
 }
 
@@ -1001,4 +1016,8 @@ body.dark-theme {
     width: 3rem;
     bottom: -0.6rem;
   }
+}
+
+.strong {
+  color: var(--first-color);
 }
