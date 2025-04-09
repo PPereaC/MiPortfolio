@@ -983,7 +983,7 @@ body.dark-theme {
   display: block;
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: var(--text-color-lighten);
+  color: #FFF;
 }
 
 .certification-button {
