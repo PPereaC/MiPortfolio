@@ -834,7 +834,177 @@ body.dark-theme {
     }
 }
 
+/*=============== EDUCATION ===============*/
+.education__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
+.education__list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.education-item {
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.education-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.education-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.education-description {
+  color: var(--text-color);
+  line-height: 1.6;
+  font-size: var(--normal-font-size);
+}
+
+/*=============== CERTIFICATIONS ===============*/
+.certifications__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.certifications__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0.25rem;
+}
+
+.certification-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: var(--container-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.certification-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.certification-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.certification-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+.certification-card:hover .certification-overlay {
+  opacity: 1;
+}
+
+.certification-card:hover .certification-image {
+  transform: scale(1.1);
+}
+
+.certification-info {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.certification-title {
+  font-size: 1rem;
+  margin: 0 0 0;
+  color: var(--first-color);
+  text-align: center;
+  display: inline-block;
+  max-width: 95%;
+  line-height: 1.3;
+}
+
+.certification-instructor {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.certification-platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.platform-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+}
+
+.certification-year {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color-lighten);
+}
+
+.certification-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .certifications__grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .education-info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
 
 /*=============== FOOTER ===============*/
 .footer__copy {

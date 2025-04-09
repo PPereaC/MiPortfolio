@@ -115,6 +115,8 @@ function loadData() {
             loadProjects(data);
             loadExperience(data);
             loadSkills(data);
+            loadEducation(data);
+            loadCertifications(data);
         })
         .catch(error => console.error('Error loading data:', error));
 }
@@ -239,6 +241,87 @@ function loadSkills(data) {
                 // Renderizar las habilidades según el filtro
                 renderSkills(filterValue);
             });
+        });
+    }
+}
+
+/*=============== EDUCATION LOADING ===============*/
+function loadEducation(data) {
+    const educationContainer = document.getElementById('education-list');
+    
+    if (educationContainer && data.education && Array.isArray(data.education)) {
+        educationContainer.innerHTML = '';
+        
+        data.education.forEach((edu, index) => {
+            const eduItem = document.createElement('div');
+            eduItem.className = 'education-item';
+            eduItem.style.animationDelay = `${index * 0.2}s`;
+            
+            eduItem.innerHTML = `
+                <div class="education-content">
+                    <h3 class="education-title">${edu.title}</h3>
+                    <div class="education-info">
+                        <span class="education-institution">${edu.institution}</span>
+                        <span class="education-year">${edu.year}</span>
+                    </div>
+                    ${edu.description ? `<p class="education-description">${edu.description}</p>` : ''}
+                </div>
+            `;
+            
+            educationContainer.appendChild(eduItem);
+        });
+
+        ScrollReveal().reveal('.education-item', {
+            origin: 'bottom',
+            distance: '30px',
+            duration: 800,
+            interval: 100,
+            delay: 200
+        });
+    }
+}
+
+/*=============== CERTIFICATIONS LOADING ===============*/
+function loadCertifications(data) {
+    const certsContainer = document.getElementById('certifications-grid');
+    
+    if (certsContainer && data.certifications && Array.isArray(data.certifications)) {
+        certsContainer.innerHTML = '';
+        
+        data.certifications.forEach((cert, index) => {
+            const certItem = document.createElement('div');
+            certItem.className = 'certification-card';
+            certItem.style.animationDelay = `${index * 0.1}s`;
+            
+            certItem.innerHTML = `
+                <div class="certification-image-container">
+                    <img src="assets/img/${cert.image}" alt="${cert.title}" class="certification-image">
+                    <div class="certification-overlay">
+                        <div class="certification-info">
+                            <h3 class="certification-title">${cert.title}</h3>
+                            <p class="certification-instructor">${cert.instructor}</p>
+                            <div class="certification-platform">
+                                <img src="${cert.platform_icon}" alt="${cert.platform}" class="platform-icon">
+                                <span>${cert.platform}</span>
+                            </div>
+                            <span class="certification-year">${cert.year}</span>
+                            <a href="${cert.certificate_link}" target="_blank" class="certification-button button button__small">
+                                Ver certificado <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            certsContainer.appendChild(certItem);
+        });
+
+        ScrollReveal().reveal('.certification-card', {
+            origin: 'bottom',
+            distance: '20px',
+            duration: 800,
+            interval: 50,
+            delay: 200
         });
     }
 }
