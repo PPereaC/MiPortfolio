@@ -12,10 +12,10 @@
       ]
     },
     {
-      "title": "FinMusic",
+      "title": "Ritmora",
       "description": "Reproductor multiplataforma de música de YouTube Music.",
-      "image": "finmusic.jpeg",
-      "link": "https://github.com/PPereaC/FinMusic",
+      "image": "ritmora.jpeg",
+      "link": "https://github.com/PPereaC/Ritmora",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
