@@ -104,28 +104,35 @@ function loadProjects() {
                 
                 data.projects.forEach(project => {
                     const projectCard = `
-                        <article class="projects__card">
-                            <div class="projects__header">
-                                <h3 class="projects__title">${project.title}</h3>
-                                <span class="projects__subtitle">${project.description}</span>
+                        <article class="project-card">
+                            <div class="project-card__image-wrapper">
+                                <img src="assets/img/${project.image}" alt="${project.title}" class="project-card__image">
+                                <div class="project-card__overlay"></div>
                             </div>
-                            <div class="projects__img-container">
-                                <img src="assets/img/${project.image}" alt="${project.title}" class="projects__img">
-                            </div>
-                            <div class="projects__modal">
-                                <div>
-                                    <div class="projects__footer">
-                                        <div class="projects__technologies">
-                                            ${project.technologies.map(tech => 
-                                                `<span class="tech-item ${tech.size ? `tech-item--${tech.size}` : ''}" title="${tech.name}">
-                                                    <img src="${tech.icon}" alt="${tech.name}" class="tech-icon" />
-                                                </span>`
-                                            ).join('')}
+                            <div class="project-card__content">
+                                <div class="project-card__header">
+                                    <h3 class="project-card__title">${project.title}</h3>
+                                    <p class="project-card__description">${project.description}</p>
+                                </div>
+                                <div class="project-card__tech-stack">
+                                    ${project.technologies.map(tech => `
+                                        <div class="tech-badge" title="${tech.name}">
+                                            <img src="${tech.icon}" alt="${tech.name}" class="tech-badge__icon">
+                                            <span class="tech-badge__name">${tech.name}</span>
                                         </div>
-                                        <a href="${project.link}" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
+                                    `).join('')}
+                                </div>
+                                <div class="project-card__footer">
+                                    <a href="${project.link}" target="_blank" class="project-card__link">
+                                        <i class="ri-github-line"></i>
+                                        <span>Ver Código</span>
+                                    </a>
+                                    ${project.demo ? `
+                                        <a href="${project.demo}" target="_blank" class="project-card__link project-card__link--demo">
+                                            <i class="ri-external-link-line"></i>
+                                            <span>Ver Demo</span>
                                         </a>
-                                    </div>
+                                    ` : ''}
                                 </div>
                             </div>
                         </article>
@@ -134,12 +141,13 @@ function loadProjects() {
                 });
 
                 // Inicializar animaciones
-                ScrollReveal().reveal('.projects__card', {
-                    origin: 'top',
-                    distance: '60px',
-                    duration: 2500,
-                    delay: 400,
-                    interval: 100
+                ScrollReveal().reveal('.project-card', {
+                    origin: 'bottom',
+                    distance: '50px',
+                    duration: 1500,
+                    interval: 300,
+                    cleanup: true,
+                    delay: 200
                 });
             }
         })
