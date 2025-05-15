@@ -3,7 +3,7 @@
     {
       "title": "CineRadar",
       "description": "Descubre películas y guarda tus favoritas en tu propia colección personalizada.",
-      "image": "cineradar.jpeg",
+      "image": "cineradar.png",
       "link": "https://github.com/PPereaC/CineRadar",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
@@ -14,12 +14,23 @@
     {
       "title": "Ritmora",
       "description": "Reproductor multiplataforma de música de YouTube Music.",
-      "image": "ritmora.jpeg",
+      "image": "ritmora.png",
       "link": "https://github.com/PPereaC/Ritmora",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
         {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg"}
+      ]
+    },
+    {
+      "title": "MediMinder",
+      "description": "Una aplicación diseñada pensando en nuestros mayores para gestionar su medicación diaria de forma sencilla y eficaz.",
+      "image": "mediminder.png",
+      "link": "https://github.com/PPereaC/MediMinder",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "Firebase", "icon": "https://svgl.app/library/firebase.svg"}
       ]
     }
   ],
