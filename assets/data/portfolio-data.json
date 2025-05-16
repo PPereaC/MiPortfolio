@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "CineRadar",
-      "description": "Descubre películas y guarda tus favoritas en tu propia colección personalizada.",
+      "description": "Explora y descubre películas con información, tráilers y reseñas. Crea tu colección de favoritos y recibe recomendaciones personalizadas.",
       "image": "cineradar.png",
       "link": "https://github.com/PPereaC/CineRadar",
       "technologies": [
@@ -13,7 +13,7 @@
     },
     {
       "title": "Ritmora",
-      "description": "Reproductor multiplataforma de música de YouTube Music.",
+      "description": "Reproductor multiplataforma de música de YouTube Music, sin anuncios, y sin necesidad de suscripción ni inicio de sesión.",
       "image": "ritmora.png",
       "link": "https://github.com/PPereaC/Ritmora",
       "technologies": [
@@ -24,7 +24,7 @@
     },
     {
       "title": "MediMinder",
-      "description": "Una aplicación diseñada pensando en nuestros mayores para gestionar su medicación diaria de forma sencilla y eficaz.",
+      "description": "Aplicación pensada para personas mayores. Gestiona y recibe notificaciones de medicaciones y citas médicas de forma sencilla.",
       "image": "mediminder.png",
       "link": "https://github.com/PPereaC/MediMinder",
       "technologies": [
