@@ -9,7 +9,7 @@
   --lig: 61%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%);
-  --first-color-rgb: 133, 182, 219; /* RGB value for first-color */
+  --first-color-rgb: 133, 182, 219;
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: #FFF;
   --text-color-light: hsl(var(--hue), 8%, 65%);
@@ -997,12 +997,11 @@ body.dark-theme {
 
 .timeline {
   position: relative;
-  max-width: 900px; /* Increased max-width */
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 0;
 }
 
-/* The actual timeline line */
 .timeline::after {
   content: '';
   position: absolute;
@@ -1015,19 +1014,17 @@ body.dark-theme {
   border-radius: 3px;
 }
 
-/* Timeline item container */
 .timeline-item-container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
-  box-sizing: border-box; /* Ensure padding doesn't affect width calculation */
+  box-sizing: border-box;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Alternating sides */
 .timeline-item-container.left {
   left: 0;
 }
@@ -1036,26 +1033,22 @@ body.dark-theme {
   left: 50%;
 }
 
-/* The circles on the timeline */
 .timeline-item-container::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 20px;
-  right: -10px; /* Adjusted for new dot size */
+  right: -10px;
   background-color: var(--body-color);
   border: 4px solid var(--first-color);
-  top: 25px; /* Adjust to align with card content */
+  top: 25px;
   border-radius: 50%;
   z-index: 1;
 }
 
-/* Positioning for right side */
 .timeline-item-container.right::after {
   left: -10px;
 }
-
-/* The actual timeline item (card) */
 .timeline-item {
   padding: 1.5rem;
   background-color: var(--container-color);
@@ -1122,7 +1115,7 @@ body.dark-theme {
   background-color: var(--body-color);
   color: var(--text-color);
   padding: 0.4rem 0.8rem;
-  border-radius: 15px; /* Pill shape */
+  border-radius: 15px;
   font-size: var(--small-font-size);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -1139,28 +1132,26 @@ body.dark-theme {
 
 .timeline-tech-item i {
   font-size: 1.1rem;
-  /* color: var(--first-color); Ensure icon color changes on hover if needed */
 }
 
-/* Responsive adjustments for the new timeline */
 @media screen and (max-width: 768px) {
   .timeline::after {
-    left: 20px; /* Move line to the left */
+    left: 20px;
   }
 
   .timeline-item-container {
     width: 100%;
-    padding-left: 50px; /* Space for the line and dot */
+    padding-left: 50px;
     padding-right: 15px;
   }
 
   .timeline-item-container.right {
-    left: 0%; /* Stack them on the left */
+    left: 0%;
   }
 
   .timeline-item-container.left::after, 
   .timeline-item-container.right::after {
-    left: 10px; /* Position dot on the line */
+    left: 10px;
   }
 }
 
@@ -1174,7 +1165,7 @@ body.dark-theme {
 }
 
 .dark-theme .timeline-tech-item:hover {
-  color: hsl(var(--hue), 15%, 95%); /* Lighter text on dark hover */
+  color: hsl(var(--hue), 15%, 95%);
 }
 
 /*=============== EDUCATION ===============*/

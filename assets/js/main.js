@@ -24,16 +24,12 @@ const loadExperience = (data) => {
     
     if (data.experience && Array.isArray(data.experience)) {
         data.experience.forEach((exp, index) => {
-            // Create the main container for the timeline item (left/right alternating)
             const timelineItemContainer = document.createElement('div');
             timelineItemContainer.className = 'timeline-item-container ' + (index % 2 === 0 ? 'left' : 'right');
-            // Apply animation delay to the container for staggered effect
             timelineItemContainer.style.animationDelay = `${index * 0.25}s`; 
 
-            // Create the content card for the experience
             const timelineItem = document.createElement('div');
             timelineItem.className = 'timeline-item';
-            // No individual animationDelay here, container handles it.
             
             timelineItem.innerHTML = `
                 <div class="timeline-header">
@@ -47,7 +43,7 @@ const loadExperience = (data) => {
                 <div class="timeline-tech">
                     ${exp.technologies.map(tech => {
                         const iconHtml = tech.icon.endsWith('.svg') ? 
-                            `<img src="${tech.icon}" alt="${tech.name}" loading="lazy">` : // Added lazy loading for images
+                            `<img src="${tech.icon}" alt="${tech.name}" loading="lazy">` : 
                             `<i class="${tech.icon}"></i>`;
                         return `<span class="timeline-tech-item">
                             ${iconHtml} ${tech.name}
@@ -56,16 +52,9 @@ const loadExperience = (data) => {
                 </div>
             `;
             
-            // Append the content card to its container, then the container to the main timeline
             timelineItemContainer.appendChild(timelineItem);
             timelineContainer.appendChild(timelineItemContainer);
         });
-
-        // ScrollReveal for the main timeline container if needed, but individual items are CSS animated.
-        // If you have a general reveal for the whole section, it would be outside this function.
-        // For example, if the '.timeline' itself needs an initial reveal:
-        // ScrollReveal().reveal(timelineContainer, { origin: 'bottom', distance: '50px', duration: 800 });
-        // The previous ScrollReveal for '.timeline-item' is removed as CSS handles individual item animations.
     }
 };
 
