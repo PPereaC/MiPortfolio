@@ -1393,6 +1393,13 @@ body.dark-theme {
 /*=============== MEDIA QUERIES ===============*/
 /* Dispositivos pequeños */
 @media screen and (max-width: 320px) {
+  .project-card__description {
+    font-size: 1.5rem;
+  }
+  .project-card__title {
+    font-size: 1.5rem;
+  }
+
   .section__title {
     font-size: 1.2rem;
   }
@@ -1423,6 +1430,13 @@ body.dark-theme {
 
 /* Dispositivos móviles medianos */
 @media screen and (min-width: 321px) and (max-width: 575px) {
+  .project-card__description {
+    font-size: 1.2rem;
+  }
+  .project-card__title {
+    font-size: 1.2rem;
+  }
+
   .section__title {
     font-size: 1.5rem; 
   }
