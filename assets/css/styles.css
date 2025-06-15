@@ -736,7 +736,7 @@ body.dark-theme {
 }
 
 .projects__description {
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
 }
@@ -881,6 +881,7 @@ body.dark-theme {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
 }
 
 .skills__filter-item:hover {
@@ -1103,7 +1104,7 @@ body.dark-theme {
 .timeline-description {
   color: var(--text-color);
   line-height: 1.7;
-  font-size: 19px;
+  font-size: 16px;
   margin-bottom: 1rem;
 }
 
@@ -1401,6 +1402,10 @@ body.dark-theme {
 /*=============== MEDIA QUERIES ===============*/
 /* Dispositivos pequeños */
 @media screen and (max-width: 320px) {
+  .section__title {
+    font-size: 1.2rem;
+  }
+
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1427,6 +1432,15 @@ body.dark-theme {
 
 /* Dispositivos móviles medianos */
 @media screen and (min-width: 321px) and (max-width: 575px) {
+  .section__title {
+    font-size: 1.5rem; 
+  }
+
+  .skills__filter-item {
+    font-size: var(--normal-font-size); 
+    padding: 0.4rem 0.8rem;
+  }
+
   .skills__grid {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
