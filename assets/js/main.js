@@ -24,21 +24,30 @@ const loadExperience = (data) => {
     
     if (data.experience && Array.isArray(data.experience)) {
         data.experience.forEach((exp, index) => {
+            // Create the main container for the timeline item (left/right alternating)
+            const timelineItemContainer = document.createElement('div');
+            timelineItemContainer.className = 'timeline-item-container ' + (index % 2 === 0 ? 'left' : 'right');
+            // Apply animation delay to the container for staggered effect
+            timelineItemContainer.style.animationDelay = `${index * 0.25}s`; 
+
+            // Create the content card for the experience
             const timelineItem = document.createElement('div');
             timelineItem.className = 'timeline-item';
-            timelineItem.style.animationDelay = `${index * 0.2}s`;
+            // No individual animationDelay here, container handles it.
             
             timelineItem.innerHTML = `
                 <div class="timeline-header">
                     <div class="timeline-position">${exp.position}</div>
+                    <div style="padding-top: 5px;"></div>
                     <div class="timeline-company">${exp.company}</div>
+                    <div style="padding-top: 15px;"></div>
                     <div class="timeline-period">${exp.period}</div>
                 </div>
                 <p class="timeline-description">${exp.description}</p>
                 <div class="timeline-tech">
                     ${exp.technologies.map(tech => {
                         const iconHtml = tech.icon.endsWith('.svg') ? 
-                            `<img src="${tech.icon}" alt="${tech.name}">` : 
+                            `<img src="${tech.icon}" alt="${tech.name}" loading="lazy">` : // Added lazy loading for images
                             `<i class="${tech.icon}"></i>`;
                         return `<span class="timeline-tech-item">
                             ${iconHtml} ${tech.name}
@@ -47,16 +56,16 @@ const loadExperience = (data) => {
                 </div>
             `;
             
-            timelineContainer.appendChild(timelineItem);
+            // Append the content card to its container, then the container to the main timeline
+            timelineItemContainer.appendChild(timelineItem);
+            timelineContainer.appendChild(timelineItemContainer);
         });
 
-        // Añadir animaciones para cada elemento
-        ScrollReveal().reveal('.timeline-item', {
-            origin: 'bottom',
-            distance: '30px',
-            duration: 1000,
-            interval: 200
-        });
+        // ScrollReveal for the main timeline container if needed, but individual items are CSS animated.
+        // If you have a general reveal for the whole section, it would be outside this function.
+        // For example, if the '.timeline' itself needs an initial reveal:
+        // ScrollReveal().reveal(timelineContainer, { origin: 'bottom', distance: '50px', duration: 800 });
+        // The previous ScrollReveal for '.timeline-item' is removed as CSS handles individual item animations.
     }
 };
 

@@ -35,16 +35,29 @@
     }
   ],
   "experience": [
-    
+
+    {
+      "company": "VisVending",
+      "position": "Desarrollador de Software",
+      "period": "may. 2025 - actualidad",
+      "contract": "Contrato por obra o servicio",
+      "description": "Desarrollo de una aplicación multiplataforma con Flutter para resolver la gestión de máquinas expendedoras, donde la falta de control en tiempo real de stock y beneficios causaba pérdidas. La solución incluye un sistema centralizado con Firebase y APIs REST que permite monitoreo remoto, alertas automáticas y paneles analíticos, optimizando las rutas de reposición y reduciendo el tiempo de respuesta ante incidencias.",
+      "technologies": [
+        {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
+        {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "Firebase", "icon": "https://svgl.app/library/firebase.svg"}
+      ]
+    },
     {
       "company": "Supermercado Las Palmeras S.L",
       "position": "Desarrollador de Software",
       "period": "oct. 2024 - nov. 2024 (2 meses)",
       "contract": "Contrato por obra o servicio",
-      "description": "Desarrollé una aplicación de escritorio en Flutter para la gestión de productos, generando etiquetas con códigos de barras, nombre, cantidad, precio, y precio por KG/L para optimizar la organización y venta en el supermercado.",
+      "description": "Realización de una app con Flutter de escritorio que automatizó la gestión de productos en el supermercado, generando etiquetas inteligentes con códigos de barras, precios por KG/L y datos actualizados, eliminando errores manuales y agilizando un 40% el proceso de ventas.",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
+        {"name": "SQLite", "icon": "https://www.svgrepo.com/show/374094/sqlite.svg"},
         {"name": "Microsoft Word", "icon": "https://www.svgrepo.com/show/374187/word.svg"}
       ]
     },
@@ -53,7 +66,7 @@
       "position": "Desarrollador de Aplicaciones",
       "period": "jul. 2024 - ago. 2024 (2 meses)",
       "contract": "Contrato por obra o servicio",
-      "description": "Desarrollé una aplicación en Flutter para empleados, permitiendo gestionar y ver información de enfriadoras, con escaneo de QR para datos de máquinas físicas.",
+      "description": "App Flutter para empleados que optimizó la gestión de enfriadoras mediante escaneo de QR, centralizando datos técnicos y estados de máquinas, reduciendo el tiempo de consulta manual.",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "Dart", "icon": "https://svgl.app/library/dart.svg"},
@@ -65,7 +78,7 @@
       "position": "Desarrollador de aplicaciones móviles y web",
       "period": "abr. 2024 - jun. 2024 (3 meses)",
       "contract": "Prácticas en Empresa",
-      "description": "Durante los tres meses de prácticas, he trabajado en el desarrollo de aplicaciones utilizando Flutter. Me he enfocado en crear soluciones adaptadas a las necesidades específicas de los clientes. Este trabajo me ha permitido profundizar en el diseño y desarrollo de aplicaciones multiplataforma. Además, participé en un proyecto web empleando PHP y Laravel, fortaleciendo mis habilidades en el desarrollo backend y la gestión de proyectos web. He implementado y trabajado con APIs RESTful, permitiéndome experimentar el ciclo completo de desarrollo desde el frontend hasta el backend.",
+      "description": "Durante mis prácticas, impulsé proyectos clave desarrollando apps multiplataforma (Flutter) y soluciones web (PHP/Laravel), centralizando datos corporativos mediante APIs REST. Mis implementaciones agilizaron procesos internos y mejoraron la efectividad operativa de la empresa cliente, llevando cada proyecto a producción con metodologías ágiles.",
       "technologies": [
         {"name": "Flutter", "icon": "https://svgl.app/library/flutter.svg"},
         {"name": "PHP", "icon": "https://www.svgrepo.com/show/349474/php.svg"},
@@ -108,7 +121,7 @@
   ],
   "education": [
     {
-      "title": "CFGS en Desarrollo de Aplicaciones Multiplataforma",
+      "title": "CFGS en Desarrollo de Aplicaciones Multiplataforma (DAM)",
       "institution": "IES Gregorio Prieto",
       "year": "",
       "description": "Formación en desarrollo de aplicaciones para múltiples plataformas incluyendo móvil, web y escritorio."
