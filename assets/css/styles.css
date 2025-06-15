@@ -579,7 +579,7 @@ body.dark-theme {
   }
 
   .project-card__description {
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
   }
 
   .project-card__tech-stack {
@@ -626,7 +626,7 @@ body.dark-theme {
   }
 
   .project-card__description {
-    font-size: var(--smaller-font-size);
+    font-size: var(--normal-font-size);
   }
 
   .tech-badge {
