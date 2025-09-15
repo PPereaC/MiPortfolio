@@ -39,7 +39,7 @@
     {
       "company": "VisVending",
       "position": "Desarrollador de Software",
-      "period": "may. 2025 - actualidad",
+      "period": "jun. 2025 - sept. 2025 (4 meses)",
       "contract": "Contrato por obra o servicio",
       "description": "Desarrollo de una aplicación multiplataforma con Flutter para resolver la gestión de máquinas expendedoras, donde la falta de control en tiempo real de stock y beneficios causaba pérdidas. La solución incluye un sistema centralizado con Firebase y APIs REST que permite monitoreo remoto, alertas automáticas y paneles analíticos, optimizando las rutas de reposición y reduciendo el tiempo de respuesta ante incidencias.",
       "technologies": [
@@ -120,6 +120,12 @@
     
   ],
   "education": [
+    {
+      "title": "CFGS en Desarrollo de Aplicaciones Web (WEB)",
+      "institution": "Centro Profesional Joyfe",
+      "year": "",
+      "description": "Formación en desarrollo de aplicaciones web."
+    },
     {
       "title": "CFGS en Desarrollo de Aplicaciones Multiplataforma (DAM)",
       "institution": "IES Gregorio Prieto",
